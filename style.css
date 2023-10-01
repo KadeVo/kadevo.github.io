@@ -16,6 +16,7 @@ html {
 
 .container {
   width: 100%;
+  padding-top: 50px;
   margin: 0 auto;
 }
 
@@ -30,13 +31,13 @@ html {
   margin: 0;
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 .nav ul li {
   display: inline;
   margin-left: 25px;
   padding: 10px;
-
   font-size: larger;
 }
 
@@ -120,12 +121,15 @@ html {
 
 /* Sections */
 
+.introduction-section,
 .about-section,
 .projects-section,
 .contacts-section {
-  height: 50vh;
+  height: 75vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .introduction-section {
@@ -138,7 +142,6 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 0.1px;
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -226,4 +229,40 @@ html {
   background-color: #f8f9fa;
   padding: 50px 0 100px;
   text-align: center;
+}
+
+.fixed-nav {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ccc;
+}
+
+.fixed-nav .nav {
+  display: flex;
+  justify-content: center;
+}
+
+.fixed-nav .nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.fixed-nav .nav ul li {
+  margin: 0 15px;
+}
+
+.fixed-nav .nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.fixed-nav .nav ul li a:hover {
+  color: #ff6600;
 }
