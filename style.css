@@ -218,11 +218,9 @@ html {
 }
 
 .project-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  width: 90%;
+  height: 350px;
+  object-fit: contain;
 }
 
 .project-box h3 {
