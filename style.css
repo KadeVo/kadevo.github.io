@@ -259,3 +259,18 @@ html {
   overflow: auto;
   max-height: 500px;
 }
+
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+}
