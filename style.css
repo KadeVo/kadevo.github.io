@@ -272,5 +272,5 @@ html {
 }
 
 .project-image:hover {
-  transform: scale(1.1);
+  content: url('path/to/animated.gif');
 }
