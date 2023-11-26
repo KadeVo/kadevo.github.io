@@ -265,12 +265,6 @@ html {
   overflow: hidden;
 }
 
-.project-image {
-  width: 100%;
-  height: auto;
-  transition: transform 0.5s ease;
-}
-
 .project-image:hover {
   content: url('path/to/animated.gif');
 }
