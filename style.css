@@ -5,6 +5,25 @@ html {
   scroll-behavior: smooth;
 }
 
+.resumebtn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  background-color: #f8f9fa;
+  color: #8b4513;
+  border: 2px solid #8b4513;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.resumebtn:hover {
+  background-color: #8b4513;
+  color: #f0e68c;
+}
+
 @media screen and (max-width: 768px) {
   .element {
     font-size: 14px;
@@ -23,23 +42,13 @@ html {
   }
 }
 
-#header {
-  background-color: blanchedalmond;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
-
 .container {
   width: 100%;
-  margin: 0 auto;
 }
 
 #header .container {
   display: flex;
   justify-content: center;
-  margin: 0;
 }
 
 /* Nav Bar */
@@ -75,18 +84,12 @@ html {
   color: #ff6600;
 }
 
-.nav a,
-.fixed-nav .nav ul li a {
-  text-decoration: none;
-}
-
 .fixed-nav {
   position: fixed;
   height: 50px;
   top: 0;
   width: 100%;
   background-color: white;
-  z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #ccc;
 }
@@ -158,7 +161,7 @@ html {
 .about-section,
 .projects-section,
 .contacts-section {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,7 +237,7 @@ html {
 footer {
   background-color: #f8f9fa;
   color: black;
-  padding: 20px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
